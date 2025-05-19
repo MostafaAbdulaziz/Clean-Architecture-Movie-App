@@ -1,5 +1,3 @@
-## Movie App
-
 <div align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Movie+App+👋;Clean+Architecture+😎;" />
 </div>
@@ -43,17 +41,12 @@ This project is a presentation of some of the movies when designing some screens
 ## Movie UI:
 
 <p float="left">
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.25 PM.jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.24 PM.jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.23 PM (2).jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.23 PM (1).jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.21 PM.jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.20 PM.jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.23 PM.jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.18 PM (1).jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.22 PM (1).jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.19 PM (1).jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.19 PM.jpeg" width="250"/>
-  <img src="e_wallet_screens/WhatsApp Image 2022-10-29 at 11.45.21 PM (1).jpeg" width="250"/>
+  <img src="movie app/Screenshot 2025-05-18 141551.png" width="250"/>
+  <img src="movie app/Screenshot 2025-05-18 141640.png" width="250"/>
+  <img src="movie app/Screenshot 2025-05-18 141708.png" width="250"/>
+  <img src="movie app/Screenshot 2025-05-19 051458.png" width="250"/>
+  <img src="movie app/Screenshot 2025-05-19 051516.png" width="250"/>
+  <img src="movie app/Screenshot 2025-05-19 051537.png" width="250"/>
+  <img src="movie app/Screenshot 2025-05-19 051632.png" width="250"/>
  
 </p>
