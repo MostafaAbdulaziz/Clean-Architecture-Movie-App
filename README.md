@@ -1,8 +1,4 @@
-<div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Movie+App+👋;Clean+Architecture+😎;" />
-</div>
-
-
+## Movie App
 
 ### Description of app :
 This project is a presentation of some of the movies when designing some screens to receive the data of the movies from the API and using the clean architecture to organize the files and code and make it responsive on all mobile and tablet screens.
