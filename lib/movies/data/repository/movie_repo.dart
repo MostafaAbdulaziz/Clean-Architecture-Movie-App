@@ -16,19 +16,19 @@ class MovieRepository extends BaseMovieRepository {
   @override
   Future<Either<Failure, List<MovieModel>>> getNowPlayingMovies() async =>
       await GetMoviesRepo(
-        movies: await baseRemoteDataSource.getNowPlaying(),
+        movies: await baseRemoteDataSource.getNowPlayingMovies(),
       ).getMoviesRepo();
 
   @override
   Future<Either<Failure, List<MovieModel>>> getPopularMovies() async =>
       await GetMoviesRepo(
-        movies: await baseRemoteDataSource.getPopular(),
+        movies: await baseRemoteDataSource.getPopularMovies(),
       ).getMoviesRepo();
 
   @override
   Future<Either<Failure, List<MovieModel>>> getTopRatedMovies() async =>
       await GetMoviesRepo(
-        movies: await baseRemoteDataSource.getTopRated(),
+        movies: await baseRemoteDataSource.getTopRatedMovies(),
       ).getMoviesRepo();
 
   @override
@@ -44,7 +44,7 @@ class MovieRepository extends BaseMovieRepository {
   @override
   Future<Either<Failure, List<RecommendationModel>>>
   getRecommendationsMovie() async {
-    final result = await baseRemoteDataSource.getRecommendationsMovie();
+    final result = await baseRemoteDataSource.getRecommendationsMovies();
     try {
       return Right(result);
     } on ServerException catch (error) {

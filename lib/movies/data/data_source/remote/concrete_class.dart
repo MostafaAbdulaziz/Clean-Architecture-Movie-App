@@ -4,9 +4,9 @@ import 'package:movie/movies/data/models/recommendation_model.dart';
 import '../../models/movie_model.dart';
 
 abstract class BaseRemoteDataSource {
-  Future<List<MovieModel>> getNowPlaying();
-  Future<List<MovieModel>> getPopular();
-  Future<List<MovieModel>> getTopRated();
+  Future<List<MovieModel>> getNowPlayingMovies();
+  Future<List<MovieModel>> getPopularMovies();
+  Future<List<MovieModel>> getTopRatedMovies();
   Future<MovieDetailsModel> getMovieDetails();
-  Future<List<RecommendationModel>> getRecommendationsMovie();
+  Future<List<RecommendationModel>> getRecommendationsMovies();
 }

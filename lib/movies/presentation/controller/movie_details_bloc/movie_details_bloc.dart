@@ -15,6 +15,7 @@ class MovieDetailsBloc extends Bloc<MovieDetailsEvent, MovieDetailsState> {
     on<GetMovieDetailsEvent>(_getMovieDetails);
     on<GetRecommendationsEvent>(_getMovieRecommendations);
   }
+
   Future _getMovieDetails(
     GetMovieDetailsEvent event,
     Emitter<MovieDetailsState> emit,

@@ -15,9 +15,9 @@ class CheckingRequestState {
       case RequestState.loaded:
         return designWidget;
       case RequestState.error:
-        return createErrorMessage();
+        return _createErrorMessage();
     }
   }
 }
 
-Widget createErrorMessage()=>Text('find error');
+Widget _createErrorMessage() => Text('find error');

@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:movie/movies/data/data_source/remote/Common_functions/get_movies.dart';
 import 'package:movie/movies/data/data_source/remote/Common_functions/set_server_exception.dart';
 import 'package:movie/movies/data/models/movie_details_model.dart';
@@ -10,15 +11,15 @@ import 'concrete_class.dart';
 
 class GetMoviesData extends BaseRemoteDataSource {
   @override
-  Future<List<MovieModel>> getNowPlaying() async =>
+  Future<List<MovieModel>> getNowPlayingMovies() async =>
       await GetMovies(api: Apis.newPlayingApi).getMovies();
 
   @override
-  Future<List<MovieModel>> getPopular() async =>
+  Future<List<MovieModel>> getPopularMovies() async =>
       await GetMovies(api: Apis.popularApi).getMovies();
 
   @override
-  Future<List<MovieModel>> getTopRated() async =>
+  Future<List<MovieModel>> getTopRatedMovies() async =>
       await GetMovies(api: Apis.topRatedApi).getMovies();
 
   @override
@@ -32,18 +33,21 @@ class GetMoviesData extends BaseRemoteDataSource {
   }
 
   @override
-  Future<List<RecommendationModel>> getRecommendationsMovie() async {
+  Future<List<RecommendationModel>> getRecommendationsMovies() async {
     final response = await getData(
       api: Apis.recommendationsMovieApi(Apis.movieId),
     );
     if (response.statusCode == 200) {
-      return List<RecommendationModel>.from(
-        response.data['results'].map(
-          (movie) => RecommendationModel.fromJson(movie),
-        ),
-      );
+      return _createRecommendationMoviesGroup(response);
     } else {
       throw throw setServerException(response);
     }
   }
 }
+
+List<RecommendationModel> _createRecommendationMoviesGroup(Response response) =>
+    List<RecommendationModel>.from(
+      response.data['results'].map(
+        (movie) => RecommendationModel.fromJson(movie),
+      ),
+    );
